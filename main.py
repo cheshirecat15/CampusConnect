@@ -3,6 +3,7 @@ from data.students import students
 from features.build_vectors import vectorize_student
 from similarity.cosine import cosine_similarity
 from graph.build_graph import build_similarity_graph
+from community.louvain import detect_communities
 
 # Vectorize students
 vectors = {
@@ -29,3 +30,9 @@ print("Nodes:", G.nodes())
 print("\nEdges:")
 for u, v, data in G.edges(data=True):
     print(f"{u} ↔ {v} (weight={data['weight']:.2f})")
+
+communities = detect_communities(G)
+
+print("\nDetected Communities:\n")
+for i, community in enumerate(communities, start=1):
+    print(f"Community {i}: {list(community)}")
