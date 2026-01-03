@@ -79,6 +79,18 @@ Each stage builds upon the previous one to transform raw student data into struc
 All recommendations are **explainable**, based on shared domains, clubs, or goals.
 
 ---
+  
+### Example: Student S1
+
+Detected Community:
+- AI / ML / Data-focused students
+
+Top Recommendations:
+- S5 — shared domains (AI/ML, Data Science), same club (AIS)
+- S4 — shared AI/ML interest, hackathon-oriented
+- S7 — cross-community bridge with AI + cybersecurity overlap
+
+---
 
 ## 🧪 Techniques Used
 
